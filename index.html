@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Her Universe | Aainu ❤️</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div id="stars"></div>
+
+    <!-- WELCOME SCREEN -->
+    <section class="hero" id="home">
+
+        <div class="moon">☾</div>
+
+        <p class="small-heading">A LITTLE SOMETHING FOR SOMEONE SPECIAL</p>
+
+        <h1>HER <span>UNIVERSE</span></h1>
+
+        <p class="subtitle">
+            Somewhere between a million stars,<br>
+            there is one person who makes everything different.
+        </p>
+
+        <h2 class="name">For You, Aainu ♡</h2>
+
+        <button class="main-btn" onclick="enterUniverse()">
+            ENTER YOUR UNIVERSE ✨
+        </button>
+
+        <p class="scroll-text">A little universe made just for you</p>
+
+    </section>
+
+
+    <!-- MAIN CONTENT -->
+    <main id="mainContent">
+
+        <!-- INTRODUCTION -->
+        <section class="section intro">
+
+            <p class="small-heading">WELCOME TO YOUR LITTLE WORLD</p>
+
+            <h2>Hello, <span>Pixie.</span></h2>
+
+            <p>
+                I made this little corner of the internet
+                because some people deserve something
+                more special than an ordinary message.
+            </p>
+
+            <p>
+                And today, this entire universe belongs to you.
+            </p>
+
+        </section>
+
+
+        <!-- VERIFICATION GAME -->
+        <section class="section">
+
+            <div class="card">
+
+                <p class="small-heading">SECURITY CHECK</p>
+
+                <h2>One little question...</h2>
+
+                <p>Who is the most special person for me in this universe?</p>
+
+                <div class="button-group">
+                    <button class="option-btn" onclick="verification(true)">
+                        you ❤️
+                    </button>
+
+                    <button class="option-btn" onclick="verification(false)">
+                        Someone else
+                    </button>
+                </div>
+
+                <p id="verificationMessage" class="message"></p>
+
+            </div>
+
+        </section>
+
+
+        <!-- PHOTO GALLERY -->
+        <section class="section" id="gallery">
+
+            <p class="small-heading">A COLLECTION OF LITTLE MOMENTS</p>
+
+            <h2>Your Beautiful <span>Memories</span></h2>
+
+            <p class="description">
+                Some pictures deserve more than a place in a gallery.
+            </p>
+
+            <div class="gallery">
+
+                <div class="photo-card">
+                    <img src="images/pixie1.jpg" alt="A special photograph">
+                    <p>A little moment of happiness ♡</p>
+                </div>
+
+                <div class="photo-card">
+                    <img src="images/pixie2.jpg" alt="A special photograph">
+                    <p>Something worth remembering ✨</p>
+                </div>
+
+                <div class="photo-card">
+                    <img src="images/pixie3.jpg" alt="A special photograph">
+                    <p>Simply unforgettable.</p>
+                </div>
+
+                <div class="photo-card">
+                    <img src="images/pixie4.jpg" alt="A special photograph">
+                    <p>One of my favourite views ❤️</p>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- LOVE LETTER -->
+        <section class="section">
+
+            <p class="small-heading">SOMETHING FROM MY HEART</p>
+
+            <h2>A Letter <span>For You</span></h2>
+
+            <div class="letter">
+
+                <div class="letter-top">♡</div>
+
+                <h3>Dear Aainu,</h3>
+
+                <p>
+                    saa! moi hoisu eta seddha sadha ordinary boy..
+                    moi na propose koribo jnu na kiba romantic kobole janu..
+                </p>
+
+                <p>
+                   so moi just olp try korisu to make u feel special..karon moi tuk log puar pora..nije
+                    eku e dibo nai para..toi e muk bht care koro..special feel korau...
+                </p>
+
+                <p>
+                    moi may be tmr karone best nhobo paru..but tmk hodai mur best to kori dekham..i promise..
+                    tmi mur lgt gutei jibon hukh t thakiba buli moi kotha dibo parim pixie...
+                </p>
+
+                <p>
+                   moi tmk nijotkeu bht besi morom dibo try korim..and i will respect you and your family..till my 
+                   last breathe...                          
+                </p>
+
+                <p>
+                   and atlast..i wanna say that..mur jibnr hekh ukhahot tmr naam ei thakibo ..Mrs. Pixie Ranjani Gogoi🌹
+                </p>
+
+                <h3 class="signature">With lots of affection,<br>Yours matha nai kia jigyasu</h3>
+
+            </div>
+
+        </section>
+
+
+        <!-- REASONS -->
+        <section class="section">
+
+            <p class="small-heading">A LITTLE LIST</p>
+
+            <h2>10 Reasons Why You're <span>Special</span></h2>
+
+            <div class="reasons">
+
+                <div class="reason">01 — Your beautiful smile.</div>
+                <div class="reason">02 — The way you make me smile.</div>
+                <div class="reason">03 — Your little habits.</div>
+                <div class="reason">04 — Your kindness.</div>
+                <div class="reason">05 — Your beautiful personality.</div>
+                <div class="reason">06 — The way you make ordinary moments special.</div>
+                <div class="reason">07 — Your laughter.</div>
+                <div class="reason">08 — The conversations we share.</div>
+                <div class="reason">09 — tmr hokolu bhal lage.</div>
+                <div class="reason">10 — tmke bhal lage kla.</div>
+
+            </div>
+
+        </section>
+
+
+        <!-- HIDDEN SURPRISE -->
+        <section class="section">
+
+            <div class="card">
+
+                <p class="small-heading">A SECRET MESSAGE</p>
+
+                <h2>Something is hiding here...</h2>
+
+                <p>There's a little surprise waiting for you.</p>
+
+                <button class="main-btn" onclick="revealSecret()">
+                    REVEAL MY SECRET ✨
+                </button>
+
+                <p id="secretMessage" class="message"></p>
+
+            </div>
+
+        </section>
+
+
+        <!-- FINAL PROPOSAL -->
+        <section class="section proposal">
+
+            <div class="proposal-heart">♡</div>
+
+            <p class="small-heading">ONE LAST QUESTION</p>
+
+            <h2>Among all the stars...</h2>
+
+            <h1>I'd choose <span>you.</span></h1>
+
+            <p class="proposal-text">
+                I don't know what tomorrow holds,
+                but I would love to make more beautiful
+                memories with you...tumar hatot t dhori gutei prithivi ghurim moi..🌹
+            </p>
+
+            <h2 class="question">
+                Tmi mur lgt gutei jibon hat t dhori jaba ne? ❤️
+            </h2>
+
+            <div class="button-group">
+
+                <button class="yes-btn" onclick="sayYes()">
+                    YES ❤️
+                </button>
+
+                <button class="option-btn" onclick="notYet()">
+                    I NEED A LITTLE TIME
+                </button>
+
+            </div>
+
+            <p id="finalMessage" class="message"></p>
+
+        </section>
+
+
+        <!-- FOOTER -->
+        <footer>
+            <p>Made with care, just for Aainu ♡</p>
+            <p>In a universe full of stars, you're special.</p>
+            <p class="footer-small">© HER UNIVERSE</p>
+        </footer>
+
+    </main>
+
+    <script src="script.js"></script>
+
+</body>
+</html>

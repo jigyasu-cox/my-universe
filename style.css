@@ -1,0 +1,372 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Poppins:wght@300;400;500;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background: #080b1d;
+    color: #f5efff;
+    font-family: 'Poppins', sans-serif;
+    overflow-x: hidden;
+}
+
+#stars {
+    position: fixed;
+    inset: 0;
+    pointer-events: none;
+    z-index: -1;
+    background:
+        radial-gradient(white 1px, transparent 1px),
+        radial-gradient(#b8a5ff 1px, transparent 1px),
+        linear-gradient(135deg, #080b1d, #17102e, #080b1d);
+
+    background-size: 90px 90px, 140px 140px, 100% 100%;
+    background-position: 0 0, 40px 60px, 0 0;
+}
+
+.hero {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 30px 20px;
+}
+
+.moon {
+    font-size: 85px;
+    color: #e5d4ff;
+    text-shadow: 0 0 40px #b18aff;
+    animation: float 4s ease-in-out infinite;
+    margin-bottom: 25px;
+}
+
+.small-heading {
+    color: #c5a6ff;
+    font-size: 11px;
+    letter-spacing: 4px;
+    margin-bottom: 25px;
+}
+
+h1, h2, h3 {
+    font-family: 'Cormorant Garamond', serif;
+}
+
+.hero h1 {
+    font-size: clamp(55px, 10vw, 110px);
+    letter-spacing: 8px;
+}
+
+h1 span, h2 span {
+    color: #c5a6ff;
+}
+
+.subtitle {
+    color: #c5bfd6;
+    line-height: 2;
+    margin-top: 20px;
+    font-size: 15px;
+}
+
+.name {
+    margin-top: 35px;
+    font-size: 35px;
+    color: #e5caff;
+}
+
+.main-btn, .yes-btn {
+    border: 1px solid #b895ff;
+    padding: 16px 30px;
+    margin-top: 35px;
+    border-radius: 40px;
+    background: linear-gradient(120deg, #8054c9, #bd83e8);
+    color: white;
+    font-size: 12px;
+    letter-spacing: 2px;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.main-btn:hover, .yes-btn:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0 30px #a77bff;
+}
+
+.scroll-text {
+    margin-top: 60px;
+    color: #88839d;
+    font-size: 11px;
+    letter-spacing: 2px;
+}
+
+#mainContent {
+    display: none;
+}
+
+.section {
+    padding: 110px 8%;
+    text-align: center;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.section h2 {
+    font-size: clamp(35px, 5vw, 55px);
+    margin-bottom: 25px;
+}
+
+.section > p:not(.small-heading) {
+    color: #c5bfd6;
+    line-height: 2;
+    max-width: 650px;
+    margin: 15px auto;
+}
+
+.intro {
+    padding-top: 140px;
+}
+
+.card {
+    max-width: 650px;
+    margin: auto;
+    padding: 45px 25px;
+    border: 1px solid #625184;
+    border-radius: 25px;
+    background: rgba(37, 27, 67, .65);
+    box-shadow: 0 0 40px rgba(132, 92, 220, .12);
+}
+
+.card h2 {
+    margin-bottom: 20px;
+}
+
+.card p {
+    color: #c5bfd6;
+    line-height: 2;
+}
+
+.button-group {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-top: 25px;
+}
+
+.option-btn {
+    background: transparent;
+    color: #e9d9ff;
+    border: 1px solid #a78bca;
+    padding: 13px 22px;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.option-btn:hover {
+    background: #49346c;
+}
+
+.message {
+    color: #e3c6ff !important;
+    margin-top: 25px;
+    font-size: 15px;
+}
+
+.description {
+    margin-bottom: 45px !important;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+    max-width: 850px;
+    margin: 40px auto;
+}
+
+.photo-card {
+    background: #1c1730;
+    border: 1px solid #65528b;
+    padding: 12px;
+    border-radius: 15px;
+    transition: .4s;
+}
+
+.photo-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 10px 35px rgba(169, 123, 255, .2);
+}
+
+.photo-card img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.photo-card p {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 20px;
+    padding: 15px 5px;
+    color: #e4d2ff;
+}
+
+.letter {
+    max-width: 650px;
+    margin: 40px auto;
+    padding: 45px;
+    background: #f1e7fa;
+    color: #302343;
+    border-radius: 5px;
+    text-align: left;
+    box-shadow: 0 15px 50px rgba(0, 0, 0, .3);
+}
+
+.letter-top {
+    text-align: center;
+    font-size: 40px;
+    color: #9161c5;
+    margin-bottom: 20px;
+}
+
+.letter h3 {
+    font-size: 30px;
+    margin-bottom: 20px;
+    color: #62417d;
+}
+
+.letter p {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 21px;
+    line-height: 1.9;
+    margin-bottom: 18px;
+    color: #42354c;
+}
+
+.letter .signature {
+    text-align: right;
+    margin-top: 35px;
+}
+
+.reasons {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+    max-width: 800px;
+    margin: 40px auto;
+}
+
+.reason {
+    background: rgba(87, 63, 126, .3);
+    border: 1px solid #65528b;
+    border-radius: 12px;
+    padding: 22px 12px;
+    transition: .3s;
+    color: #e5d9f7;
+}
+
+.reason:hover {
+    transform: scale(1.04);
+    background: #35264e;
+}
+
+.proposal {
+    padding-top: 150px;
+    padding-bottom: 150px;
+}
+
+.proposal-heart {
+    font-size: 90px;
+    color: #d5a7ff;
+    animation: heartbeat 2s infinite;
+}
+
+.proposal h1 {
+    font-size: clamp(50px, 8vw, 85px);
+    margin: 20px 0;
+}
+
+.proposal-text {
+    max-width: 550px;
+    margin: 30px auto !important;
+}
+
+.question {
+    color: #e4ccff;
+    font-size: 32px;
+    margin-top: 45px;
+}
+
+footer {
+    text-align: center;
+    padding: 60px 20px;
+    border-top: 1px solid #372b52;
+    color: #b5a5ca;
+    line-height: 2.5;
+}
+
+.footer-small {
+    font-size: 10px;
+    letter-spacing: 4px;
+    margin-top: 20px;
+}
+
+@keyframes float {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-20px);
+    }
+}
+
+@keyframes heartbeat {
+    0%, 100% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.15);
+    }
+}
+
+@media(max-width: 650px) {
+
+    .gallery {
+        grid-template-columns: 1fr;
+    }
+
+    .photo-card img {
+        height: 350px;
+    }
+
+    .reasons {
+        grid-template-columns: 1fr;
+    }
+
+    .letter {
+        padding: 25px;
+    }
+
+    .letter p {
+        font-size: 19px;
+    }
+
+    .section {
+        padding: 80px 6%;
+    }
+
+    .hero h1 {
+        letter-spacing: 4px;
+    }
+
+}
